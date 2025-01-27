@@ -1,0 +1,17 @@
+type: WallCrafter
+name: Fruit Collector
+description: Collects fruits from trees.
+size: 1
+category: production
+requirements: [
+  copper/15
+  graphite/10
+]
+drillTime: 120
+consumes: {
+  power: 0.3
+}
+
+output: fruit
+attribute: fruittree
+squareSprite: false

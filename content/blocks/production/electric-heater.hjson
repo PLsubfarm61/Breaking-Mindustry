@@ -1,0 +1,89 @@
+    type: multicraft.MultiCrafter
+    category: crafting
+    name: "Electric Heater"
+    squareSprite: false
+
+    size: 1
+    health: 900
+
+    menu: Number
+    recipes: [
+        {
+        input: {
+            
+        items: [
+        ]
+        fluids: [
+        ]
+        power: 1
+        }
+        output: { 
+
+        items: [
+        ]
+        heat: 50
+        fluids: [
+        ]
+        }
+        }
+        {
+        input: {
+            
+        items: [
+        ]
+        fluids: [
+        ]
+        power: 2
+        }
+        output: { 
+
+        items: [
+        ]
+        heat: 150
+        fluids: [
+        ]
+        }
+        }
+        {
+        input: {
+            
+        items: [
+        ]
+        fluids: [
+        ]
+        power: 3.2
+        }
+        output: { 
+
+        items: [
+        ]
+        heat: 250
+        fluids: [
+        ]
+        }
+        }
+        {
+        input: {
+            
+        items: [
+        ]
+        fluids: [
+        ]
+        power: 5
+        }
+        output: { 
+
+        items: [
+        ]
+        heat: 400
+        fluids: [
+        ]
+        }
+        }
+    ]
+    
+    requirements: [
+        copper/15
+        silicon/5
+        graphite/10
+    ]

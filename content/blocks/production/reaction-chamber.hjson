@@ -1,0 +1,194 @@
+    type: multicraft.MultiCrafter
+    category: crafting
+    name: Reaction Chamber
+    fluidOutputDirections: [1,2,3,4]
+    squareSprite: true
+    rotate: true
+    rotateDraw: false
+
+    size: 2
+    health: 900
+
+    menu: Detailed
+    recipes: [
+        {
+        input: {
+            
+        items: [
+        ]
+        fluids: [
+            funipowdermod-methanol/0.3
+            funipowdermod-carbon-dioxide/0.2
+        ]
+        }
+        output: { 
+
+        items: [
+        ]
+        fluids: [
+            funipowdermod-acetic-acid/0.2
+        ]
+        }
+
+        craftTime: 120
+        }
+        {
+        input: {
+            
+        items: [
+            funipowdermod-cyanide/6
+        ]
+        fluids: [
+            water/0.2
+        ]
+        }
+        output: { 
+
+        items: [
+            funipowdermod-phenylacetic-acid/4
+        ]
+        fluids: [
+        ]
+        }
+
+        craftTime: 120
+        }
+        {
+        input: {
+            
+        items: [
+            funipowdermod-phenylacetic-acid/6
+            thorium/1
+        ]
+        heat: 400
+        fluids: [
+            funipowdermod-acetic-acid/0.3
+        ]
+        }
+        output: { 
+
+        items: [
+        ]
+        fluids: [
+            funipowdermod-phenylacetone/0.4
+            funipowdermod-carbon-dioxide/0.2
+            water/0.2
+        ]
+        }
+
+        craftTime: 60
+        }
+        {
+        input: {
+            
+        items: [
+        ]
+        heat: 100
+        fluids: [
+            funipowdermod-nitric-acid/0.6
+        ]
+        }
+        output: { 
+
+        items: [
+        ]
+        fluids: [
+            funipowdermod-ammonia/0.2
+        ]
+        }
+
+        craftTime: 120
+        }
+    ]
+
+drawer: {
+  type: multicraft.DrawRecipe
+  drawers: [
+    { 
+    type: DrawMulti
+    drawers: [
+        {
+            type: DrawRegion
+            suffix: -bottom2
+        }
+        {
+            type: DrawLiquidTile
+            drawLiquid: acetic-acid
+            suffix: -liquid
+        }
+        {
+            type: DrawRegion
+            suffix: -bottom
+        }
+        {
+            type: DrawRegion
+            suffix: -top
+        }
+     ]
+    }
+    [
+        {
+            type: DrawRegion
+            suffix: -bottom2
+        }
+        {
+            type: DrawLiquidTile
+            drawLiquid: water
+            suffix: -liquid
+        }
+        {
+            type: DrawRegion
+            suffix: -bottom
+        }
+        {
+            type: DrawRegion
+            suffix: -top
+        }
+    ]
+    [
+        {
+            type: DrawRegion
+            suffix: -bottom2
+        }
+        {
+            type: DrawLiquidTile
+            drawLiquid: phenylacetone
+            suffix: -liquid
+        }
+        {
+            type: DrawRegion
+            suffix: -bottom
+        }
+        {
+            type: DrawRegion
+            suffix: -top
+        }
+    ]
+    [
+        {
+            type: DrawRegion
+            suffix: -bottom2
+        }
+        {
+            type: DrawLiquidTile
+            drawLiquid: ammonia
+            suffix: -liquid
+        }
+        {
+            type: DrawRegion
+            suffix: -bottom
+        }
+        {
+            type: DrawRegion
+            suffix: -top
+        }
+    ]
+  ]
+}
+    
+    requirements: [
+        metaglass/15
+        graphite/35
+        titanium/15
+        copper/10
+    ]

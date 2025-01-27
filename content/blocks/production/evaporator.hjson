@@ -1,0 +1,62 @@
+    type: multicraft.MultiCrafter
+    category: crafting
+    name: Evaporator
+    squareSprite: true
+
+    size: 6
+    health: 900
+
+    menu: Detailed
+    recipes: [
+        {
+        input: {
+            
+        items: [
+        ]
+        fluids: [
+            funipowdermod-liquid-methamphetamine/0.1
+        ]
+        }
+        output: { 
+
+        items: [
+            funipowdermod-methamphetamine/10
+        ]
+        fluids: [
+        ]
+        }
+
+        craftTime: 1200
+        }
+    ]
+
+drawer: {
+  type: multicraft.DrawRecipe
+  drawers: [
+    { 
+    type: DrawMulti
+    drawers: [
+        {
+            type: DrawRegion
+            suffix: -bottom
+        }
+        {
+            type: DrawLiquidTile
+            drawLiquid: liquid-methamphetamine
+            suffix: -liquid
+        }
+        {
+            type: DrawRegion
+            suffix: -top
+        }
+     ]
+    }
+  ]
+}
+    
+    requirements: [
+        metaglass/60
+        graphite/50
+        titanium/30
+        silicon/45
+    ]

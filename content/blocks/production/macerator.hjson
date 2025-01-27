@@ -1,0 +1,61 @@
+    type: multicraft.MultiCrafter
+    category: crafting
+    name: Macerator
+    fluidOutputDirections: [1,3,2,4]
+    squareSprite: true
+    rotate: true
+    rotateDraw: false
+
+    size: 2
+    health: 900
+
+    menu: Detailed
+    recipes: [
+        {
+        input: {
+            
+        items: [
+            funipowdermod-seeds/6
+        ]
+        fluids: [
+        ]
+        power: 2
+        }
+        output: { 
+
+        items: [
+            funipowdermod-seeds-powder/6
+        ]
+        fluids: [
+        ]
+        }
+
+        craftTime: 250
+        }
+    ]
+
+drawer: {
+  type: multicraft.DrawRecipe
+  defaultDrawer: 0
+  drawers: [
+    { 
+    type: DrawMulti
+    drawers: [
+        {
+            type: DrawRegion
+            suffix: -bottom
+        }
+        {
+            type: DrawRegion
+            suffix: -rotator
+            rotateSpeed: 1.2
+        }
+     ]
+    }
+  ]
+}
+    
+    requirements: [
+        silicon/35
+        titanium/10
+    ]

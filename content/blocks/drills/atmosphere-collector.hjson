@@ -1,0 +1,135 @@
+    type: multicraft.MultiCrafter
+    category: production
+    name: Atmosphere Collector
+    fluidOutputDirections: [1,2,3,4]
+    squareSprite: false
+    rotate: true
+    rotateDraw: false
+    craftEffect: drillSteam
+
+    size: 3
+    health: 900
+
+    menu: Detailed
+    recipes: [
+        {
+        input: {
+            
+        items: [
+        ]
+        power: 3
+        fluids: [
+        ]
+        }
+        output: { 
+
+        items: [
+        ]
+        fluids: [
+            nitrogen/0.4
+        ]
+        }
+
+        craftTime: 120
+        }
+        {
+        input: {
+            
+        items: [
+        ]
+        power: 3
+        fluids: [
+        ]
+        }
+        output: { 
+
+        items: [
+        ]
+        fluids: [
+            water/0.1
+        ]
+        }
+
+        craftTime: 120
+        }
+        {
+        input: {
+            
+        items: [
+        ]
+        power: 3
+        fluids: [
+        ]
+        }
+        output: { 
+
+        items: [
+        ]
+        fluids: [
+            funipowdermod-carbon-dioxide/0.2
+        ]
+        }
+
+        craftTime: 120
+        }
+    ]
+
+drawer: {
+  type: multicraft.DrawRecipe
+  drawers: [
+    { 
+    type: DrawMulti
+    drawers: [
+        {
+            type: DrawRegion
+            suffix: -bottom
+        }
+        {
+            type: DrawLiquidTile
+            drawLiquid: nitrogen
+            suffix: -liquid
+        }
+        {
+            type: DrawRegion
+            suffix: -top
+        }
+     ]
+    }
+    [
+       {
+            type: DrawRegion
+            suffix: -bottom
+        }
+        {
+            type: DrawLiquidTile
+            drawLiquid: water
+            suffix: -liquid
+        }
+        {
+            type: DrawRegion
+            suffix: -top
+        } 
+    ]
+    [
+        {
+            type: DrawRegion
+            suffix: -bottom
+        }
+        {
+            type: DrawLiquidTile
+            drawLiquid: carbon-dioxide
+            suffix: -liquid
+        }
+        {
+            type: DrawRegion
+            suffix: -top
+        }
+    ]
+  ]
+}
+    
+    requirements: [
+        metaglass/20
+        graphite/15
+        titanium/25
+    ]

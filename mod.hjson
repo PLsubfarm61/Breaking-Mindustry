@@ -1,0 +1,27 @@
+{
+name: "funipowdermod"
+displayName: "[Br]eaking Mind[U]stry"
+author: " [[]white]pol[[]red]ish [[]lime]subfarm61 "
+subtitle: "Funi powder mod"
+description: 
+'''
+[[]green]=============|DESCRIPTION|============
+[[]lightgray]Build a blue flour factory! If you like mod, please leave a [[]yellow]star [[]lightgray]on [[]purple]github.
+[[]green]=================|INFO|=================
+[[]white]Mod need "[[]#42a5f5]MultiCrafter Lib[[]white]" to work.
+[[]green]===============|DISCORD|===============
+  [[]navy]Discord [[]white]link - 
+ [[]blue]https://discord.gg/7SSAupjxeD
+[[]forest]-------------------------------------
+[[]lime]Me [[]white]polish_subfarm61
+[[]green]==============|PROBLEMS|==============
+[[]white]If you have [[]lime]suggestion[[]white] or you find a 
+[[]purple]bug[[]white], describe it on our discord server. 
+[[]green]========================================
+'''
+version: "0"
+dependencies: [
+"multi-crafter"
+]
+minGameVersion: 136
+}

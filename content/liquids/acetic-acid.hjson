@@ -1,0 +1,7 @@
+  type: CellLiquid
+  capPuddles: true
+  name: Acetic Acid
+  description: .
+  color: feffe1
+  colorFrom: e2e4bf
+  colorTo: c6c891

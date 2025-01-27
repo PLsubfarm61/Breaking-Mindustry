@@ -1,0 +1,18 @@
+type: WallCrafter
+name: Wood Collector
+description: Collects wood from trees.
+size: 1
+category: production
+requirements: [
+  copper/15
+  titanium/10
+  graphite/10
+]
+drillTime: 220
+consumes: {
+  power: 0.4
+}
+
+output: wood
+attribute: fruittree
+squareSprite: false

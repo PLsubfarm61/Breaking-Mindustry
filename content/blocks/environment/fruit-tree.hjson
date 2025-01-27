@@ -1,0 +1,14 @@
+type: TreeBlock
+name: Fruit Tree
+size: 1
+destructible: true
+category: turret
+
+attributes: {
+    fruittree: 1
+}
+
+    requirements: [
+        wood-pile/20
+        fruit/5
+    ]

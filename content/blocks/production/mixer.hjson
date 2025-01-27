@@ -1,0 +1,239 @@
+    type: multicraft.MultiCrafter
+    category: crafting
+    name: Mixer
+    squareSprite: true
+
+    size: 2
+    health: 900
+
+    menu: Detailed
+    recipes: [
+        {
+        input: {
+            
+        items: [
+            funipowdermod-seeds-powder/6
+        ]
+        fluids: [
+            water/0.2
+        ]
+        heat: 50
+        power: 2
+        }
+        output: { 
+
+        items: [
+            funipowdermod-cyanide/4
+        ]
+        fluids: [
+        ]
+        }
+
+        craftTime: 1200
+        }
+        {
+        input: {
+            
+        items: [
+        ]
+        fluids: [
+            water/0.2
+            nitrogen/0.3
+        ]
+        power: 2
+        }
+        output: { 
+
+        items: [
+        ]
+        fluids: [
+            funipowdermod-nitric-acid/0.2
+        ]
+        }
+
+        craftTime: 120
+        }
+        {
+        input: {
+            
+        items: [
+            silicon/1
+        ]
+        fluids: [
+            funipowdermod-ammonia/0.2
+            funipowdermod-methanol/0.2
+        ]
+        power: 2
+        }
+        output: { 
+
+        items: [
+        ]
+        fluids: [
+            funipowdermod-methylamine/0.3
+        ]
+        }
+
+        craftTime: 120
+        }
+        {
+        input: {
+            
+        items: [
+        ]
+        fluids: [
+            funipowdermod-phenylacetone/0.2
+            funipowdermod-methylamine/0.2
+        ]
+        power: 2
+        }
+        output: { 
+
+        items: [
+        ]
+        fluids: [
+            funipowdermod-liquid-methamphetamine/0.4
+        ]
+        }
+
+        craftTime: 120
+        }
+        {
+        input: {
+            
+        items: [
+            funipowdermod-wood/6
+        ]
+        fluids: [
+        ]
+        power: 2
+        }
+        output: { 
+
+        items: [
+            funipowdermod-wood-pile/2
+        ]
+        fluids: [
+        ]
+        }
+
+        craftTime: 60
+        }
+    ]
+
+drawer: {
+  type: multicraft.DrawRecipe
+  defaultDrawer: 0
+  drawers: [
+    { 
+    type: DrawMulti
+    drawers: [
+        {
+            type: DrawRegion
+            suffix: -bottom
+        }
+        {
+            type: DrawLiquidTile
+            drawLiquid: water
+            suffix: -liquid
+        }
+        {
+            type: DrawRegion
+            suffix: -rotator
+            rotateSpeed: 2.2
+        }
+        {
+            type: DrawRegion
+            suffix: -top
+        }
+     ]
+    }
+    [
+       {
+            type: DrawRegion
+            suffix: -bottom
+        }
+        {
+            type: DrawLiquidTile
+            drawLiquid: nitric-acid
+            suffix: -liquid
+        }
+        {
+            type: DrawRegion
+            suffix: -rotator
+            rotateSpeed: 2.2
+        }
+        {
+            type: DrawRegion
+            suffix: -top
+        } 
+    ]
+    [
+       {
+            type: DrawRegion
+            suffix: -bottom
+        }
+        {
+            type: DrawLiquidTile
+            drawLiquid: methylamine
+            suffix: -liquid
+        }
+        {
+            type: DrawRegion
+            suffix: -rotator
+            rotateSpeed: 2.2
+        }
+        {
+            type: DrawRegion
+            suffix: -top
+        } 
+    ]
+    [
+       {
+            type: DrawRegion
+            suffix: -bottom
+        }
+        {
+            type: DrawLiquidTile
+            drawLiquid: liquid-methamphetamine
+            suffix: -liquid
+        }
+        {
+            type: DrawRegion
+            suffix: -rotator
+            rotateSpeed: 2.2
+        }
+        {
+            type: DrawRegion
+            suffix: -top
+        } 
+    ]
+    [
+       {
+            type: DrawRegion
+            suffix: -bottom
+        }
+        {
+            type: DrawLiquidTile
+            drawLiquid: water
+            suffix: -liquid
+        }
+        {
+            type: DrawRegion
+            suffix: -rotator
+            rotateSpeed: 2.2
+        }
+        {
+            type: DrawRegion
+            suffix: -top
+        } 
+    ]
+  ]
+}
+    
+    requirements: [
+        metaglass/10
+        silicon/15
+        graphite/30
+        titanium/10
+    ]

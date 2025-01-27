@@ -1,0 +1,7 @@
+  type: CellLiquid
+  capPuddles: true
+  name: Liquid Methamphetamine
+  description: .
+  color: 41c7cd
+  colorFrom: 41c7cd
+  colorTo: 2694a4
